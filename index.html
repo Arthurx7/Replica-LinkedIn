@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="https://img.icons8.com/color/48/linkedin.png">
     <link rel="stylesheet" href="./Styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/33bcea0508.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -62,18 +64,38 @@
     <div class="contenido-feed">
         <div class="contenido-izq">
             <div class="bienvenido">
-                <img src="" alt="Foto Perfil">
-                <h1>¡Te damos la bienvenida, <br> ANDRES FELIPE!</h1>
-                <p>Agrega una foto</p>
+                <div class="contenidoFondo"></div>
+                <img src="./Assets/Img-Perfil.jpeg" alt="Foto Perfil" class="perfil-img">
+                <div class="bienvenida-text">
+                    <h1>¡Te damos la bienvenida, <br>  ANDRES FELIPE!</h1>
 
-
-            </div>
-            <div class="varios">
-                <p>Grupos</p>
-                <p>Eventos</p>
-                <p>Hashtags sugeridos</p>
-
+                    <p style="color: #777; cursor: context-menu;">	Ingeniero Multimedia</p>
+                    
+                </div>
+                <div class="buttons-container">
+                    <button class="button-with-border-up">
+                        Contactos <br>
+                        <p>Amplía tu red</p>
+                        <i class="fas fa-user-plus icon-right" style="color: black;"></i>
+                    </button>
                 
+                    <button class="button-with-border color">
+                        Avanza profesionalmente con Premium <br>
+                        <p> <i class="fas fa-coins" style="color: gold;"></i> Prueba 1 mes por 0 COP</p>
+                    </button>
+                
+                    <button class="button-with-border-down">    
+                        <p><i class="fas fa-bookmark" style="color: rgb(114, 109, 109);"></i>  Marcapáginas</p>
+                    </button>
+                </div>
+                
+            </div>
+            
+            <div class="varios">
+                <p><strong>Grupos</strong></p>
+                <p><strong> <i class="fas fa-plus"></i> Eventos</strong></p>
+                <p><strong>Hashtags sugeridos</strong></p>
+                <button>Ver Más</button>
             </div>
         </div>
 
@@ -91,12 +113,52 @@
 
         <div class="contenido-der">
             <div class="añadir-feed">
-                <h2>Añadir a tu feed</h2>
+                <div class="subTitulo">
+                  <h3>Añadir a tu feed </h3> 
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="Paginas">
+                    <img src="./Assets/STC.jpg" alt="Img-Perfil">
+                    <div>
+                        <h4>Save the Children Colombia</h4>
+                        <p>Humanitario en Save The Children Colombia</p>
+                        <button><i class="fa-solid fa-plus"></i> Seguir</button>
+                    </div>
+                </div>
+
+                <div class="Paginas">
+                    <img src="./Assets/Alpina.jpg" alt="Img-Perfil">
+                    <div>
+                        <h4>Alpina</h4>
+                        <p>Empresa • Producción alimentaria</p>
+                        <button><i class="fa-solid fa-plus"></i> Seguir</button>
+                    </div>
+                </div>
+
+                <div class="Paginas">
+                    <img src="./Assets/Sena.jpg" alt="Img-Perfil">
+                    <div>
+                        <h4>Agencia Pública de Empleo SENA</h4>
+                        <p>Empresa • Administración gubernamental</p>
+                        <button><i class="fa-solid fa-plus"></i> Seguir</button>
+                    </div>
+                </div>
+
+                <button class="Recomendaciones">
+                    Ver todas las recomendaciones <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="Img-Publicidad">
+                <img src="./Assets/Link.jpg" alt="Publicidad">
+            </div>
+
+            <div class="footer">
+                
             </div>
             
         </div>
           
-        <!-- Contenido feed -->
     </div>
 </body>
 </html>

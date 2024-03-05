@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(234, 234, 234);
+    font-family: 'Open Sans';
 }
 
 .MenuGlobalNavegacion {
@@ -10,7 +11,7 @@ body {
     background-color: #fff;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1; 
+    z-index: 5; 
 }
 
 .menu-container {
@@ -115,8 +116,7 @@ body {
     display: flex;
     padding-top: 100px;
 }
-.contenido-izq {
-    
+.contenido-izq {   
     width: 16%; 
     margin-left: 120px; 
     
@@ -124,20 +124,156 @@ body {
 
 .bienvenido {
     background-color: #fff;
-    padding: 20px;
+    position: relative;
+    z-index: 1; 
+    padding: 0px; 
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.contenidoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17%;
+    background-color: #0077b5;
+    z-index: -1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.perfil-img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #ffffff;
+}
+
+.bienvenida-text h1 {
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+
+.bienvenida-text h1:hover{
+    text-decoration: underline;
+    text-decoration-color: #0077b5;
+}
+
+.bienvenido button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    text-align: start;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bienvenido button:hover {
+    background-color: #e0e0e0;
+}
+
+.bienvenido button.color:hover p {
+    color: #0077b5; 
+    text-decoration: underline; 
+    text-decoration-color: #0077b5;
+}
+
+
+.bienvenido button p {
+    color: black;
+    margin: 0;
+}
+
+.bienvenido button.button-with-border-up {
+    border-top: 1px solid #ccc;
+}
+
+.bienvenido button.button-with-border-down {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.buttons-container button {
+    position: relative;
+    padding-right: 30px; 
+    padding-left: 30px;
+
+    
+}
+
+
+
+.icon-right {
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+
 .varios {
     background-color: #fff;
-    padding: 20px;
+    padding: 0;
     border-radius: 10px;
-    text-align: start;
+    text-align: center;
     margin-top: 10px;
+    padding-top: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.varios p{
+    text-align: start;
+    padding-left: 20px;
+    color: #0077b5;
+    cursor: pointer;
+    position: relative;
+}
+
+.varios p:hover{
+    text-decoration: underline; 
+    text-decoration-color: #0077b5;
+}
+
+.varios button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #777;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.varios button:hover {
+    background-color: #e0e0e0;
+}
+
+.varios p i {
+    position: absolute;
+    right: 0; 
+    padding-right: 20px; 
+    color: black; 
+}
+
 
 .contenido-mid{
     width: 45%; 
@@ -161,13 +297,118 @@ body {
 }
 
 .contenido-der{
-    width: 20%; 
-    margin-left: 20px; 
+    width: 22%; 
+    margin-left: 20px;
 }
 
 .añadir-feed{
     background-color: #fff;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+
+.subTitulo{
+    display: flex;
+    
+}
+
+.subTitulo h3{  
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.subTitulo i{
+    margin-right: 20px;
+    padding-top: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.Paginas{
+    display: flex;
+    padding: 0px;
+    margin: 0;
+}
+
+.Paginas img{
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 4px solid #ffffff;
+}
+
+.Paginas h4{
+    margin-bottom: 0;
+}
+
+.Paginas p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #777;
+}
+
+.Paginas button{
+    border-radius: 25px;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fff;
+    color: #777;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.Paginas button i{
+    color:rgb(114, 109, 109);
+}
+
+.Paginas button:hover{
+    background-color: #dfdfdf;
+    border: 3px solid black;
+}
+
+.Recomendaciones{
+    background-color: transparent;
+    font-size: 18px;
+    color: #777;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Recomendaciones:hover{
+    background-color: #d4d4d4;
+}
+
+.Img-Publicidad{
+    background-color: transparent;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 0;
+}
+
+.Img-Publicidad img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block; 
 }
